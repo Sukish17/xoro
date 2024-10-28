@@ -14,7 +14,7 @@ export default function Login({ setToken }) {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    const response = await fetch(backendApi + "/api/v1/user/login", {
+    const response = await fetch(`${backendApi}+/api/v1/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
