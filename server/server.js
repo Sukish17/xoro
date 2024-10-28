@@ -7,7 +7,7 @@ import cors from "cors";
 import connectDB from "./db/index.js";
 import cookieParser from 'cookie-parser';
 
-
+const PORT = 'https://xoro-server.vercel.app'
 const app = express();
 
 app.use(express.json());
@@ -17,8 +17,8 @@ app.use(cors({origin: "https://xoro-front.vercel.app", credentials: true}));
 // Connect to MongoDB
 connectDB();
 
-app.listen(3001, () => {
-  console.log('Server is running on 3001'); // Log the HTTP link
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`); // Log the HTTP link
 });
 
 // Our project routes go here
