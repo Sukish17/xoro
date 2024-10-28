@@ -7,7 +7,7 @@ import cors from "cors";
 import connectDB from "./db/index.js";
 import cookieParser from 'cookie-parser';
 
-const PORT = 3001
+const PORT = 'https://xoro-backend.vercel.app';
 const app = express();
 
 app.use(express.json());
