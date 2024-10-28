@@ -12,13 +12,13 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin: "https://xoro-front.vercel.app/login", credentials: true}));
+app.use(cors({origin: "https://xoro-front.vercel.app", credentials: true}));
 
 // Connect to MongoDB
 connectDB();
 
 app.listen(3001, () => {
-  console.log('Server is running on http://localhost:3001'); // Log the HTTP link
+  console.log('Server is running on 3001'); // Log the HTTP link
 });
 
 // Our project routes go here
