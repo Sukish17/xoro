@@ -1,0 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Inria+Serif:300,300italic,regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom thin scrollbar for project-item in the project list component */
