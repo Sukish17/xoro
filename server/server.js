@@ -3,7 +3,6 @@ import projectsRouter from "./routes/project-routes.js";
 import tasksRouter from "./routes/task-routes.js";
 import healthcheckRouter from "./routes/healthcheck-routes.js";
 import authRouter from "./routes/auth-routes.js";
-import { PORT } from "./config/env-config.js";
 import cors from "cors";
 import connectDB from "./db/index.js";
 import cookieParser from 'cookie-parser';
@@ -18,8 +17,8 @@ app.use(cors({origin: "http://localhost:3000", credentials: true}));
 // Connect to MongoDB
 connectDB();
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`); // Log the HTTP link
+app.listen(3001, () => {
+  console.log('Server is running on http://localhost:3001'); // Log the HTTP link
 });
 
 // Our project routes go here
