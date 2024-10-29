@@ -1,1 +1,1 @@
-export const backendApi = "https://xoro-backend.vercel.app";
+export const backendApi = "https://rubyxoroserver.vercel.app";
